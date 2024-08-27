@@ -1,0 +1,55 @@
+/* work start */
+
+.work {
+  padding: 100px 0;
+
+  &-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 133.69%;
+    text-align: center;
+    color: $title-color;
+    margin-bottom: 16px;
+  }
+  &-card {
+    @include flex(center, space-between);
+
+    @include md(769) {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+
+  &-box {
+    width: 28%;
+    
+    @include md(769) {
+      width: 100%;
+      flex-direction: column;
+      @include flex(center, none);
+      text-align: center;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 133.69%;
+      color: $red-color;
+      margin: 15px 0;
+    }
+
+    &__subtitle {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: $subtitle-color;
+      margin-bottom: 16px;
+    }
+  }
+
+  &-button {
+    padding: 8px 16px;
+  }
+}
+
+/* work end */

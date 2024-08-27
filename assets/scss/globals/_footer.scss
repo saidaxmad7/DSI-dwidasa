@@ -1,0 +1,92 @@
+/*footer start*/
+
+.footer {
+
+
+
+    &-row {
+        @include flex(flex-end, space-between);
+
+        @include md(1100) {
+            flex-wrap: wrap;
+            gap: 20px;
+        };
+    }
+
+    &-main {
+        padding-bottom: 24px;
+    }
+
+    &-address {
+        max-width: 320px;
+        &__title {
+            font-weight: 500;
+            font-size: 18px;
+            color: $footer-title-color;
+            margin: 10px 0;
+        }
+
+        &__text {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 149%;
+            color: $footer-title-color;
+        }
+    }
+
+    &-contact {
+        &__title {
+            font-weight: 500;
+            font-size: 24px;
+            color: $footer-title-color;
+            margin-bottom: 16px;
+        }
+
+    }
+
+    &-link {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 149%;
+        color: $footer-title-color;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &-partners {
+        max-width: 420px;
+        @include flex(unset, space-between);
+        flex-wrap: wrap;
+        gap: 12px;
+
+        @include md(1100) {
+            max-width: 100%;
+        };
+        @include md(768) {
+            max-width: 420px;
+        };
+
+        &__image {
+            flex-grow:1;
+        }
+    }
+
+    &-bottom {
+        padding: 22px 0;
+        background-color: $red-color;
+
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            color: $white-color;
+            text-align: center;
+        }
+    }
+}
+
+/*footer end*/
