@@ -1,0 +1,38 @@
+/*banner start*/
+
+.service-banner {
+    position: relative;
+    padding: 0;
+
+    &-bg-image {
+        background-image: url(/images/servicase-image/services-bg-image.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        height: 368px;
+    }
+
+    &-title {
+        margin: 0 auto;
+        width: 50%;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 133.69%;
+        color: $footer-title-color;
+        text-align: center;
+        padding-top: 74px;
+
+        &__red {
+            color: $red-color;
+        }
+
+        @include md(813) {
+            font-size: 36px;
+        }
+    }
+}
+
+
+
+/*banner end*/

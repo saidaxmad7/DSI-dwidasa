@@ -1,0 +1,43 @@
+/*products start*/
+
+.products-banner {
+  &-bg {
+    background-color: $red-color;
+    padding: 70px 0;
+  }
+
+  &-titles {
+    @include flex(center, center);
+  }
+
+  &-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 133.69%;
+    text-align: center;
+    color: $white-color;
+    width: 60%;
+
+    @include md(800) {
+      font-size: 36px;
+      width: 100%;
+    }
+
+    &__primary {
+      font-weight: 600;
+    }
+  }
+}
+
+.products-about-row {
+    @include flex(center,center);
+}
+
+.service-about-image {
+    @include md(975) {
+        margin-top: 28px;
+    }
+}
+
+/*products end*/
